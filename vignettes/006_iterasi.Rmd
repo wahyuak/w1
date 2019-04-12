@@ -14,7 +14,7 @@ output:
     toc_collapsed: yes
     toc_float: yes
 editor_options: 
-  chunk_output_type: console
+  chunk_output_type: inline
 ---
 
 ```{r setup, include=FALSE}
@@ -54,7 +54,7 @@ for (i in seq_along(output)) {      # 2. Urutan
 output
 ```
 
-Dapatkah Anda melengkapi kode berikut untuk mengimpor berkas-berkas csv yang tercatat dalam obyek 'daftar_berkas'? Simpanlah `output` dengan nama 'output_for`!
+Dapatkah Anda melengkapi kode berikut untuk mengimpor berkas-berkas csv yang tercatat dalam obyek 'daftar_berkas'? Simpanlah `output` dengan nama `output_for`! Anda juga dapat membuka obyek `output_for` pada konsol untuk dapat melihat struktur data tersebut dengan lebih jelas.
 
 ```{r}
 daftar_berkas
@@ -107,7 +107,7 @@ input <- sesuatu
 output <- lapply(input, nama_fungsi)
 ```
 
-Lengkapi kode berikut untuk mengimpor berkas csv dengan menggunakan `map_dfr` dan simpanlah `output` dengan nama `output_map`. Dapatkah Anda menemukan perbedaan antara hasil dari fungsi `map_dfr` dengan `for loop` dan `lapply` pada contoh sebelumnya? Jalankan `class()` pada `output_map`.
+Lengkapi kode berikut untuk mengimpor berkas csv dengan menggunakan `map_dfr` dan simpanlah `output` dengan nama `output_map`. Dapatkah Anda menemukan perbedaan antara hasil dari fungsi `map_dfr` dengan `for loop` dan `lapply` pada contoh sebelumnya? Jalankan `class()` pada `output_map`. Mengapa kita tidak perlu menggunakan `rbind` dan `Reduce`?
 
 ```{r}
 library(purrr) # aktifkan paket purrr

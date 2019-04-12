@@ -14,7 +14,7 @@ output:
     toc_collapsed: yes
     toc_float: yes
 editor_options: 
-  chunk_output_type: console
+  chunk_output_type: inline
 ---
 
 ```{r setup, include=FALSE}
@@ -50,7 +50,7 @@ ___
 ___
 ```
 
-Umumnya berkas `csv` menggunakan penanda koma (,) untuk memisahkan antar kolom dan titik (.) sebagai penanda desimal. Namun bagaimana jika Anda memiliki berkas `csv` yang yang menggunakan titik-koma (;) untuk memisahkan kolom dan koma (,) sebagai penanda desimal? Anda dapat menggunakan fungsi `read_csv2` untuk melakukan hal tersebut sebagaimana ditunjukan pada contoh berikut:
+Umumnya berkas `csv` menggunakan penanda koma (,) untuk memisahkan antar kolom dan titik (.) sebagai penanda desimal. Namun bagaimana jika Anda memiliki berkas `csv` yang yang menggunakan titik-koma (;) untuk memisahkan kolom dan koma (,) sebagai penanda desimal? Sebagai contoh, pada direktori `data-raw` terdapar berkas `evals2` yang memiliki kriteria tersebut. Anda dapat menggunakan fungsi `read_csv2` untuk mengimpor berkas tersebut sebagaimana ditunjukan pada contoh berikut:
 
 ```{r}
 evals2 <- read_csv2("../data-raw/evals2.csv")
@@ -60,7 +60,7 @@ identical(evals, evals2) # fungsi untuk cek kesamaan antara dua obyek
 Selain berkas lokal yang tersedia di komputer, Anda juga dapat mengimpor berkas yang tersedia di internet langsung dengan menggunakan pranala (URL). Caranya adalah dengan mengganti lokasi berkas lokal dengan lokasi berkas *remote*. Data `evals` tersedia pada pranala "https://www.openintro.org/stat/data/evals.csv". Dapatkan Anda mengimpor berkas tersebut dan menyimpannya sebagai obyek dengan nama `evals3`? Gunakkan fungsi `identical()` untuk membandingkannya dengan `evals2`!
 
 ```{r}
-___ <- read_csv(___)
+___ <- read_csv("___")
 ___(___, evals2)
 ```
 
